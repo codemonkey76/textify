@@ -35,4 +35,26 @@ return [
         ],
     ],
 
+    'mailgun' => [
+        'signing_key' => env('MAILGUN_SIGNING_KEY')
+    ],
+
+    'aws' => [
+        'key' => env('AWS_ACCESS_KEY_ID'),
+        'secret' => env('AWS_SECRET_ACCESS_KEY'),
+        'region' => env('AWS_DEFAULT_REGION', 'ap-southeast-2'),
+        'bucket' => env('AWS_BUCKET'),
+        'transcription' => [
+            'language_code' => env('AWS_TRANSCRIPTION_LANGUAGE', 'en-AU'),
+            'media_format' => env('AWS_TRANSCRIPTION_MEDIA', 'wav'),
+            'delay' => env('AWS_TRANSCRIPTION_DELAY', 60),
+        ],
+    ],
+
+    'clicksend' => [
+        'username' => env('CLICKSEND_USERNAME'),
+        'api_key' => env('CLICKSEND_API_KEY'),
+        'base_url' => env('CLICKSEND_BASE_URL', 'https://rest.clicksend.com/v3'),
+    ],
+
 ];
