@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response;
 
-class VerifyMailgunSignature
+class VerifyWebhookSignature
 {
     /**
      * Handle an incoming request.
@@ -25,7 +25,7 @@ class VerifyMailgunSignature
             return response('Invalid request', Response::HTTP_UNAUTHORIZED);
         }
 
-        $apiKey = config('services.mailgun.signing_key');
+        $apiKey = config('services.webhook.signing_key');
         $computedSignature = hash_hmac('sha256', $timestamp . $token, $apiKey);
 
         if (!hash_equals($computedSignature, $signature)) {

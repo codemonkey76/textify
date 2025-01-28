@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Models\SmsMessage;
 use App\Services\ClickSendApi;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
@@ -14,7 +15,7 @@ class NotifyDestination implements ShouldQueue
     /**
      * Create a new job instance.
      */
-    public function __construct(protected string $phoneNumber, protected string $message) {}
+    public function __construct(protected int $accountId, protected string $phoneNumber, protected string $message) {}
 
     /**
      * Execute the job.
@@ -24,12 +25,13 @@ class NotifyDestination implements ShouldQueue
         $response = $clickSendApi->sendSms($this->phoneNumber, $this->message);
 
         if ($response['http_code'] === 200) {
+            Log::info("sendSms response:", ['response' => $response]);
             $messageId = $response['body']['data']['messages'][0]['message_id'] ?? null;
 
             if ($messageId) {
                 SmsMessage::create([
-                    'phone_number',
-                    $this->phoneNumber,
+                    'account_id' => $this->accountId,
+                    'phone_number' => $this->phoneNumber,
                     'message' => $this->message,
                     'message_id' => $messageId,
                     'status' => 'PENDING'

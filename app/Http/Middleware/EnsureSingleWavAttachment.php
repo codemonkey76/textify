@@ -10,33 +10,27 @@ class EnsureSingleWavAttachment
 {
     public function handle(Request $request, Closure $next): Response
     {
-        $attachmentCount = $request->get('attachment-count', 0);
+        // Get all uploaded files from the request
+        $attachments = $request->allFiles();
 
-        if ($attachmentCount != 1) {
-            return response()->json([
-                'error' => 'The email must contain exactly one attachment.'
-            ], 400);
+        // Ensure exactly one attachment is present
+        if (count($attachments) !== 1) {
+            return $this->errorResponse('The email must contain exactly one attachment.');
         }
 
-        $attachmentKey = 'attachment-1';
+        // Get the first (and only) file
+        $attachment = array_values($attachments)[0];
 
-        if (!$request->hasFile($attachmentKey)) {
-            return response()->json([
-                'error' => 'The attachment is missing.'
-            ], 400);
-        }
-
-        $attachment = $request->file($attachmentKey);
-
-        if ($attachment->getClientOriginalExtension() !== 'wav') {
-            return response()->json(
-                [
-                    'error' => 'The attachment must be a wav file.'
-                ],
-                400
-            );
+        // Validate the file type is .wav
+        if (strtolower($attachment->getClientOriginalExtension()) !== 'wav') {
+            return $this->errorResponse('The attachment must be a wav file.');
         }
 
         return $next($request);
+    }
+
+    protected function errorResponse(string $message): Response
+    {
+        return response()->json(['error' => $message], 400);
     }
 }

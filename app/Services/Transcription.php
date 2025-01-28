@@ -5,11 +5,10 @@ namespace App\Services;
 use Aws\TranscribeService\TranscribeServiceClient;
 use Illuminate\Contracts\Config\Repository;
 
-class TranscriptionService
+class Transcription
 {
     private array $options;
     private $bucket;
-    private $vm_folder;
     private $defaultLanguage;
     private $defaultMediaFormat;
     private TranscribeServiceClient $client;

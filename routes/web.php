@@ -1,15 +1,11 @@
 <?php
 
-use App\Http\Controllers\MailgunWebhookController;
+use App\Http\Controllers\WebhookController;
 use App\Http\Middleware\EnsureSingleWavAttachment;
-use App\Http\Middleware\VerifyMailgunSignature;
+use App\Http\Middleware\VerifyWebhookSignature;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::post('/inbound', [MailgunWebhookController::class, 'handle'])->middleware([
-    VerifyMailgunSignature::class,
+Route::post('/inbound', [WebhookController::class, 'handle'])->middleware([
+    VerifyWebhookSignature::class,
     EnsureSingleWavAttachment::class
 ]);

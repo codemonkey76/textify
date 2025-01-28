@@ -24,10 +24,12 @@ class CheckTranscriptionStatus implements ShouldQueue
 
             if ($status === "COMPLETED") {
                 $transcriptionUri = $result['TranscriptionJob']['Transcript']['TranscriptFileUri'];
-                $transcription = file_get_contents($transcriptionUri);
+                $transcriptionObject = json_decode(file_get_contents($transcriptionUri));
+
+                $transcription = data_get($transcriptionObject, "results.transcripts.0.transcript");
 
                 Log::info("Transcription completed successfully for job {$this->jobName}.", [
-                    'transcription' => $transcription,
+                    'transcription' => $transcriptionObject,
                 ]);
                 NotifyAccount::dispatch($this->accountId, $transcription);
             } elseif ($status === "FAILED") {

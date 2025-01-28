@@ -24,7 +24,7 @@ class NotifyAccount implements ShouldQueue
             }
 
             foreach ($account->destinations as $destination) {
-                NotifyDestination::dispatch($destination, $this->transcript);
+                NotifyDestination::dispatch($account->id, $destination->phone, $this->transcript);
             }
 
             Log::info("Notification jobs dispatched for account ID: {$this->accountId}");

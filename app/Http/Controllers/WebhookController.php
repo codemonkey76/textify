@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\TranscribeVoicemail;
 use App\Models\Account;
 use Illuminate\Http\Request;
 
-class MailgunWebhookController extends Controller
+class WebhookController extends Controller
 {
     public function handle(Request $request)
     {
         // Lookup recipient account
-        $account = Account::whereEmail($request->input('receipient'))->first();
+        $account = Account::whereEmail($request->input('to'))->first();
 
         if (!$account) {
             return response()->json(['error' => 'Associated account not found.'], 404);
@@ -35,6 +36,9 @@ class MailgunWebhookController extends Controller
         $file = $request->file($attachmentKey);
         $filePath = $file->store('attachments', $disk);
         logger()->info("WAV Attachment saved to $filePath");
+
+
+        TranscribeVoicemail::dispatch($filePath, $account->id);
 
         return response()->json([
             'message' => 'Webhook processed successfully.',

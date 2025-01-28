@@ -35,8 +35,8 @@ return [
         ],
     ],
 
-    'mailgun' => [
-        'signing_key' => env('MAILGUN_SIGNING_KEY')
+    'webhook' => [
+        'signing_key' => env('WEBHOOK_SIGNING_KEY')
     ],
 
     'aws' => [
