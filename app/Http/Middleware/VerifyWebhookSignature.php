@@ -22,6 +22,7 @@ class VerifyWebhookSignature
         Log::info("Received Email:", ['signature' => $signature, 'timestamp' => $timestamp, 'token' => $token, 'request' => $request->all()]);
 
         if (!$signature || !$timestamp || !$token) {
+            Log::info("Missing signature, timestamp or token");
             return response('Invalid request', Response::HTTP_UNAUTHORIZED);
         }
 
@@ -29,6 +30,7 @@ class VerifyWebhookSignature
         $computedSignature = hash_hmac('sha256', $timestamp . $token, $apiKey);
 
         if (!hash_equals($computedSignature, $signature)) {
+            Log::info("Signature doesn't match", ['computed' => $computedSignature, 'signature' => $signature]);
             return response('Invalid signature', Response::HTTP_UNAUTHORIZED);
         }
 

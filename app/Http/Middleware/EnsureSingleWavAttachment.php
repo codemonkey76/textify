@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response;
 
 class EnsureSingleWavAttachment
@@ -15,6 +16,7 @@ class EnsureSingleWavAttachment
 
         // Ensure exactly one attachment is present
         if (count($attachments) !== 1) {
+            Log::info("Wrong number of attachments", ['attachment-count' => count($attachments)]);
             return $this->errorResponse('The email must contain exactly one attachment.');
         }
 
@@ -23,6 +25,7 @@ class EnsureSingleWavAttachment
 
         // Validate the file type is .wav
         if (strtolower($attachment->getClientOriginalExtension()) !== 'wav') {
+            Log::info("Expected a wav file", ['extension' => $attachment->getClientOriginalExtension()]);
             return $this->errorResponse('The attachment must be a wav file.');
         }
 
