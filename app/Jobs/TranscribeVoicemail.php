@@ -7,6 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class TranscribeVoicemail implements ShouldQueue
 {
@@ -16,7 +17,7 @@ class TranscribeVoicemail implements ShouldQueue
 
     public function handle(TranscribeServiceClient $transcribeClient): void
     {
-        $jobName = 'transcription-' . now()->format('Y-md-h-i-s');
+        $jobName = 'transcription-' . now()->format('Y-md-h-i-s') . '-' . Str::random(5);
         $fileUrl = Storage::url($this->filePath);
 
         try {
