@@ -51,6 +51,10 @@ return [
         ],
     ],
 
+    'sns' => [
+        'topic_arn' => env('AWS_SNS_TOPIC_ARN'),
+    ],
+
     'clicksend' => [
         'username' => env('CLICKSEND_USERNAME'),
         'api_key' => env('CLICKSEND_API_KEY'),
