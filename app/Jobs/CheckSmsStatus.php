@@ -44,7 +44,9 @@ class CheckSmsStatus implements ShouldQueue
 
         SmsMessage::where('message_id', $this->messageId)
             ->update([
-                'status' => $status
+                'status' => $status,
+                'error_code' => $messageData['error_code'] ?? null,
+                'error_message' => $messageData['error_text'] ?? null
             ]);
     }
 }
