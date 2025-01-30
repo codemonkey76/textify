@@ -8,6 +8,7 @@ use App\Jobs\NotifyAccount;
 use App\Jobs\NotifyDestination;
 use App\Jobs\TranscribeVoicemail;
 use App\Models\Account;
+use App\Models\SmsMessage;
 use App\Services\ClickSendApi;
 use Aws\TranscribeService\TranscribeServiceClient;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -147,5 +148,41 @@ class QueuedJobsTest extends TestCase
         $job->handle(app(ClickSendApi::class));
 
         Bus::assertDispatched(CheckSmsStatus::class, fn($job) => $job->messageId === $msgId);
+    }
+
+    #[Test]
+    public function it_updates_sms_status_from_clicksend()
+    {
+        $account = Account::create(['email' => 'test@example.com']);
+
+        $smsMessage = SmsMessage::create([
+            'message' => 'Test message',
+            'phone_number' => '+1234567890',
+            'message_id' => 'msg123',
+            'status' => 'PENDING',
+            'message_price' => 0.01,
+            'message_parts' => 1,
+            'account_id' => $account->id
+        ]);
+
+        $this->mockClickSendObject
+            ->shouldReceive('checkSmsStatus')
+            ->with($smsMessage->message_id)
+            ->andReturn([
+                'http_code' => 200,
+                'response_code' => 'SUCCESS',
+                'data' => [
+                    'status_code' => 201,
+                    'status_text' => 'Success: Message received on handset'
+                ]
+            ]);
+
+        $job = new CheckSmsStatus($smsMessage->message_id);
+        $job->handle(app(ClickSendApi::class));
+
+        $this->assertDatabaseHas('sms_messages', [
+            'message_id' => $smsMessage->message_id,
+            'status' => 'SENT'
+        ]);
     }
 }
