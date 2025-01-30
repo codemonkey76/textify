@@ -33,7 +33,7 @@ class ClickSendApi
 
     public function checkSmsStatus(string $messageId)
     {
-        $url = $this->baseUrl . "/sms/$messageId";
+        $url = $this->baseUrl . "/sms/receipts/$messageId";
 
         $response = Http::withBasicAuth($this->username, $this->apiKey)->get($url);
 
