@@ -32,7 +32,8 @@ class EnsureSingleWavAttachment
         }
 
         // Validate the file type is (MIME type check is more secure)
-        if ($attachment->getMimeType() !== 'audio/wav') {
+        $allowedMimeTypes = ['audio/wav', 'audio/x-wav'];
+        if (!in_array($attachment->getMimeType(), $allowedMimeTypes, true)) {
             Log::info("Invalid MIME type", ['mime_type' => $attachment->getMimeType()]);
             abort(Response::HTTP_BAD_REQUEST, 'The attachment must be a valid WAV file.');
         }
