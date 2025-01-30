@@ -47,7 +47,7 @@ return [
         'transcription' => [
             'language_code' => env('AWS_TRANSCRIPTION_LANGUAGE', 'en-AU'),
             'media_format' => env('AWS_TRANSCRIPTION_MEDIA', 'wav'),
-            'delay' => env('AWS_TRANSCRIPTION_DELAY', 60),
+            'delay' => env('AWS_TRANSCRIPTION_DELAY', 20),
         ],
     ],
 
