@@ -34,11 +34,64 @@ cd textify
 ```
 
 2. Install dependencies:
+```bash
+composer install
+```
+
 3. Copy the environment file:
+```bash
+cp .env.example .env
+```
+
 4. Configure your environment variables in `.env`:
+```bash
+# Application
+APP_NAME=Textify
+APP_ENV=production
+APP_KEY=
+APP_DEBUG=false
+APP_URL=http://localhost
+
+# Database
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=textify
+DB_USERNAME=root
+DB_PASSWORD=
+
+# AWS Configuration
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=ap-southeast-2
+AWS_BUCKET=
+AWS_TRANSCRIPTION_LANGUAGE=en-AU
+AWS_TRANSCRIPTION_MEDIA=wav
+AWS_TRANSCRIPTION_DELAY=60
+
+# ClickSend Configuration
+CLICKSEND_USERNAME=
+CLICKSEND_API_KEY=
+CLICKSEND_BASE_URL=https://rest.clicksend.com/v3
+
+# Webhook Security
+WEBHOOK_SIGNING_KEY=
+```
+
 5. Generate application key
+```bash
+php artisan key:generate
+```
+
 6. Run migrations:
+```bash
+php artisan migrate
+```
+
 7. Setup the queue worker:
+```bash
+php artisan queue:work
+```
 
 ## 🏗️ Architecture
 
@@ -107,7 +160,7 @@ The project follows PSR-12 coding standards.
 
 ## 📄 License
 
-MIT License
+[MIT License](/LICENSE)
 
 ## 👥 Contributing
 
