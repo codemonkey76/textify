@@ -1,68 +1,129 @@
+<p align="center"
 [![Laravel Forge Site Deployment Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fforge.laravel.com%2Fsite-badges%2Feea46f7e-aabb-45b1-b4b0-3916941e466a%3Fdate%3D1%26label%3D1%26commit%3D1&style=plastic)](https://forge.laravel.com/servers/836870/sites/2600873)
-
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Textify - Voicemail to SMS Transcription Service
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Textify is a Laravel-based application that automatically transcribes voicemail attachments and sends them as SMS messages to configured destinations. It provides a seamless bridge between voice messages and text notifications.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Automatic voicemail transcription using AWS Transcribe
+- SMS delivery via ClickSend API
+- Multiple destination support per account
+- Webhook-based email processing
+- Asynchronous job processing
+- Status tracking for transcriptions and SMS messages
+- Comprehensive error handling and logging
 
-## Learning Laravel
+## 📋 Requirements
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- PHP 8.1 or higher
+- Composer
+- MySQL/PostgreSQL
+- AWS Account with Transcribe Service access
+- ClickSend Account
+- Laravel Queue Worker (Redis/Database)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## ⚙️ Installation
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. Clone the repository:
+```bash
+git clone https://github.com/codemonkey76/textify.git
+cd textify
+```
 
-## Laravel Sponsors
+2. Install dependencies:
+3. Copy the environment file:
+4. Configure your environment variables in `.env`:
+5. Generate application key
+6. Run migrations:
+7. Setup the queue worker:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🏗️ Architecture
 
-### Premium Partners
+The application follows a queue-based architecture for processing voicemails:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- Email with voicemail attachment is received via webhook
+- Attachment is validated and stored
+- Transcription job is queued
+- AWS Transcribe processes the voicemail
+- Transcription is sent via SMS to configured destinations
+- Status tracking for both transcription and SMS delivery
 
-## Contributing
+## 🔒 Security
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Webhook signatures are verified
+- Single WAV attachment validation
+- Secure file storage
+- API authrntication for external services
 
-## Code of Conduct
+## 💻 API endpoints
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Webhook Endpoint
+```bash
+POST /inbound
+```
 
-## Security Vulnerabilities
+Receives emails with voicemail attachments. Requires webhook signature verification.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🔧 Configuration
 
-## License
+### AWS Transcribe
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Configure language settings in `config/services.php`
+- Adjust transcription delay and retry settings
+- Setup appropriate IAM permissions
+
+### ClickSend
+
+- Configure API credentials
+- Setup webhook endpoints
+- Monitor SMS delivery status
+
+## 📝 Queue Management
+
+The application uses Laravel's queue system for processing jobs:
+
+- TranscribeVoicemail
+- CheckTranscriptionStatus
+- NotifyAccount
+- NotifyDestination
+- CheckSmsStatus
+
+Monitor and manage queues using Laravel Horizon (if installed).
+
+## 🛠️ Development
+
+### Running Tests
+
+```bash
+php artisan test
+```
+
+### Code Style
+
+The project follows PSR-12 coding standards.
+
+## 📄 License
+
+MIT License
+
+## 👥 Contributing
+
+- Fork the repository
+- Create a feature branch
+- Commit your changes
+- Push to the branch
+- Create a Pull Request
+
+## ⚠️ Support
+
+For support, please open an issue in the GitHub repository or contact the maintainers.
+
+## 🙏 Acknowledgments
+
+- Laravel Framework
+- AWS Transcribe Service
+- ClickSend API
+
