@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class ClickSendApi
 {
@@ -21,6 +22,7 @@ class ClickSendApi
                 ]
             ],
         ];
+        Log::channel('clicksend')->info("Sending request to $url with payload", ['payload' => $payload]);
 
         $response = Http::withBasicAuth($this->username, $this->apiKey)->post($url, $payload);
 
@@ -34,6 +36,7 @@ class ClickSendApi
     public function checkSmsStatus(string $messageId)
     {
         $url = $this->baseUrl . "/sms/receipts/$messageId";
+        Log::channel('clicksend')->info("Sending request to $url");
 
         $response = Http::withBasicAuth($this->username, $this->apiKey)->get($url);
 
