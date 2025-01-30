@@ -1,5 +1,7 @@
 <p align="center">
-[![Laravel Forge Site Deployment Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fforge.laravel.com%2Fsite-badges%2Feea46f7e-aabb-45b1-b4b0-3916941e466a%3Fdate%3D1%26label%3D1%26commit%3D1&style=plastic)](https://forge.laravel.com/servers/836870/sites/2600873)
+<a href="https://forge.laravel.com/servers/836870/sites/2600873">
+        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fforge.laravel.com%2Fsite-badges%2Feea46f7e-aabb-45b1-b4b0-3916941e466a%3Fdate%3D1%26label%3D1%26commit%3D1&style=plastic" alt="Laravel Forge site Deployment Status">
+</a>
 </p>
 
 # Textify - Voicemail to SMS Transcription Service
