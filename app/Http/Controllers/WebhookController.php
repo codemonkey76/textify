@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Jobs\TranscribeVoicemail;
 use App\Models\Account;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpFoundation\Response;
 
 class WebhookController extends Controller
 {
@@ -12,6 +15,7 @@ class WebhookController extends Controller
     {
         // Lookup recipient account
         $account = Account::whereEmail($request->input('to'))->first();
+        Log::info("Account lookup:", ['email' => $request->input('to'), 'account' => $account]);
 
         if (!$account) {
             return response()->json(['error' => 'Associated account not found.'], 404);
@@ -32,11 +36,17 @@ class WebhookController extends Controller
 
         $disk = config('filesystems.default');
 
-        $attachmentKey = "attachment-1";
-        $file = $request->file($attachmentKey);
+        $file = array_values($request->allFiles())[0];
         $filePath = $file->store('attachments', $disk);
-        logger()->info("WAV Attachment saved to $filePath");
+        if (!$filePath) {
+            Log::error("Failed to store attachment.");
+            abort(Response::HTTP_INTERNAL_SERVER_ERROR, 'Failed to store the attachment.');
+        }
 
+        if (!Storage::disk($disk)->exists($filePath)) {
+            Log::error("Stored file not found: $filePath");
+            abort(Response::HTTP_INTERNAL_SERVER_ERROR, 'File storage error.');
+        }
 
         TranscribeVoicemail::dispatch($filePath, $account->id);
 
@@ -47,6 +57,6 @@ class WebhookController extends Controller
                 'path' => $filePath,
                 'disk' => $disk
             ],
-        ], 200);
+        ], Response::HTTP_OK);
     }
 }

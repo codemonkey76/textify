@@ -15,7 +15,7 @@ class NotifyDestination implements ShouldQueue
     /**
      * Create a new job instance.
      */
-    public function __construct(protected int $accountId, protected string $phoneNumber, protected string $message) {}
+    public function __construct(public int $accountId, public string $phoneNumber, protected string $message) {}
 
     /**
      * Execute the job.

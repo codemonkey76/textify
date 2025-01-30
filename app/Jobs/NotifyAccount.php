@@ -11,7 +11,7 @@ class NotifyAccount implements ShouldQueue
 {
     use Queueable;
 
-    public function __construct(protected int $accountId, protected string $transcript) {}
+    public function __construct(public int $accountId, public string $transcript) {}
 
     public function handle(): void
     {

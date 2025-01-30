@@ -13,12 +13,19 @@ class TranscribeVoicemail implements ShouldQueue
 {
     use Queueable;
 
-    public function __construct(protected string $filePath, protected int $accountId) {}
+    public function __construct(public string $filePath, public int $accountId) {}
 
     public function handle(TranscribeServiceClient $transcribeClient): void
     {
+        Log::info('in handle');
         $jobName = 'transcription-' . now()->format('Y-md-h-i-s') . '-' . Str::random(5);
         $fileUrl = Storage::url($this->filePath);
+
+        Log::info("Starting AWS Transcription Job", [
+            'jobName' => $jobName,
+            'fileUrl' => $fileUrl,
+            'accountId' => $this->accountId
+        ]);
 
         try {
             $transcribeClient->startTranscriptionJob([
@@ -30,7 +37,12 @@ class TranscribeVoicemail implements ShouldQueue
                 ],
             ]);
 
-            CheckTranscriptionStatus::dispatch($jobName, $this->accountId)->delay(now()->addSeconds(config('services.aws.transcription.delay')));
+            Log::info("Transcription job started successfully", ['jobName' => $jobName]);
+
+            CheckTranscriptionStatus::dispatch($jobName, $this->accountId)
+                ->delay(now()->addSeconds(config('services.aws.transcription.delay')));
+
+            Log::info("CheckTranscriptionStatus job dispatched", ['jobName' => $jobName, 'accountId' => $this->accountId]);
         } catch (\Exception $e) {
             Log::error("Failed to start transcription job: " . $e->getMessage());
         }

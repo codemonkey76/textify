@@ -19,11 +19,15 @@ class VerifyWebhookSignature
         $signature = $request->input('signature');
         $timestamp = $request->input('timestamp');
         $token = $request->input('token');
-        Log::info("Received Email:", ['signature' => $signature, 'timestamp' => $timestamp, 'token' => $token, 'request' => $request->all()]);
 
         if (!$signature || !$timestamp || !$token) {
             Log::info("Missing signature, timestamp or token");
-            return response('Invalid request', Response::HTTP_UNAUTHORIZED);
+            abort(Response::HTTP_UNAUTHORIZED, 'Invalid request');
+        }
+
+        if (abs(time() - $timestamp) > 300) { // 5-minute tolerance
+            Log::info("Timestamp is too old", ['timestamp' => $timestamp]);
+            abort(Response::HTTP_UNAUTHORIZED, 'Request expired');
         }
 
         $apiKey = config('services.webhook.signing_key');
@@ -31,7 +35,7 @@ class VerifyWebhookSignature
 
         if (!hash_equals($computedSignature, $signature)) {
             Log::info("Signature doesn't match", ['computed' => $computedSignature, 'signature' => $signature]);
-            return response('Invalid signature', Response::HTTP_UNAUTHORIZED);
+            abort(Response::HTTP_UNAUTHORIZED, 'Invalid signature');
         }
 
         return $next($request);
