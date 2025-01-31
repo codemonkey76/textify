@@ -36,8 +36,8 @@ class TranscribeVoicemail implements ShouldQueue
                 'Media' => [
                     'MediaFileUri' => $fileUrl,
                 ],
-                'Notifications' => [
-                    'CompletionTopicArn' => $snsTopicArn, // Add SNS topic for notifications
+                'NotificationChannel' => [
+                    'SnsTopicArn' => $snsTopicArn,
                 ],
             ]);
 
