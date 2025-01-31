@@ -4,8 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Destination extends Model
+class Transcription extends Model
 {
+
     protected $guarded = [];
 
     public function account()

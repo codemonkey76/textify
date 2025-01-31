@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Models\Transcription;
 use Aws\TranscribeService\TranscribeServiceClient;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
@@ -34,6 +35,11 @@ class TranscribeVoicemail implements ShouldQueue
                 'Media' => [
                     'MediaFileUri' => $fileUrl,
                 ],
+            ]);
+
+            Transcription::create([
+                'account_id' => $this->accountId,
+                'job_name' => $jobName
             ]);
 
             Log::info("Transcription job started successfully", ['jobName' => $jobName]);
