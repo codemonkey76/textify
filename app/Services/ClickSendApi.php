@@ -25,6 +25,7 @@ class ClickSendApi
         Log::channel('clicksend')->info("Sending request to $url with payload", ['payload' => $payload]);
 
         $response = Http::withBasicAuth($this->username, $this->apiKey)->post($url, $payload);
+        Log::channel('clicksend')->info("Got response", ['response' => $response]);
 
         return [
             'http_code' => $response->status(),
@@ -39,6 +40,8 @@ class ClickSendApi
         Log::channel('clicksend')->info("Sending request to $url");
 
         $response = Http::withBasicAuth($this->username, $this->apiKey)->get($url);
+
+        Log::channel('clicksend')->info('Got response', ['response' => $response]);
 
         return [
             'http_code' => $response->status(),
