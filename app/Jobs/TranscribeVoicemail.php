@@ -17,14 +17,15 @@ class TranscribeVoicemail implements ShouldQueue
 
     public function handle(TranscribeServiceClient $transcribeClient): void
     {
-        Log::info('in handle');
         $jobName = 'transcription-' . now()->format('Y-md-h-i-s') . '-' . Str::random(5);
         $fileUrl = Storage::url($this->filePath);
+        $snsTopicArn = config('services.sns.topic_arn');
 
         Log::info("Starting AWS Transcription Job", [
             'jobName' => $jobName,
             'fileUrl' => $fileUrl,
-            'accountId' => $this->accountId
+            'accountId' => $this->accountId,
+            'snsTopicArn' => $snsTopicArn
         ]);
 
         try {
@@ -34,6 +35,13 @@ class TranscribeVoicemail implements ShouldQueue
                 'MediaFormat' => config('services.aws.transcription.media_format'),
                 'Media' => [
                     'MediaFileUri' => $fileUrl,
+                ],
+                'Settings' => [
+                    'ShowSpeakerLabels' => true,
+                    'MaxSpeakerLAbels' => 2,
+                ],
+                'Notifications' => [
+                    'CompletionTopicArn' => $snsTopicArn, // Add SNS topic for notifications
                 ],
             ]);
 
