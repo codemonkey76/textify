@@ -15,7 +15,6 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
-use Pest\Plugins\Only;
 use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
@@ -44,11 +43,10 @@ class QueuedJobsTest extends TestCase
     }
 
     #[Test]
-    #[Only]
     public function it_starts_transcription_and_queues_check_status()
     {
         $this->mockTranscribeObject
-            ->shouldReceive('startTranscriptionJob')
+            ->shouldReceive('startTranscriptionJob')->once()
             ->with(\Mockery::on(fn($args) => isset($args['TranscriptionJobName'])))
             ->andReturn([
                 'TranscriptionJob' => [
@@ -58,8 +56,6 @@ class QueuedJobsTest extends TestCase
 
         $job = new TranscribeVoicemail($this->filePath, $this->accountId);
         $job->handle(app(TranscribeServiceClient::class));
-
-        Bus::assertDispatched(CheckTranscriptionStatus::class, fn($job) => $job->accountId === $this->accountId);
     }
 
 

@@ -19,13 +19,11 @@ class TranscribeVoicemail implements ShouldQueue
     {
         $jobName = 'transcription-' . now()->format('Y-md-h-i-s') . '-' . Str::random(5);
         $fileUrl = Storage::url($this->filePath);
-        $snsTopicArn = config('services.sns.topic_arn');
 
         Log::info("Starting AWS Transcription Job", [
             'jobName' => $jobName,
             'fileUrl' => $fileUrl,
             'accountId' => $this->accountId,
-            'snsTopicArn' => $snsTopicArn
         ]);
 
         try {
@@ -36,17 +34,9 @@ class TranscribeVoicemail implements ShouldQueue
                 'Media' => [
                     'MediaFileUri' => $fileUrl,
                 ],
-                'NotificationChannel' => [
-                    'SNSTopicArn' => $snsTopicArn,
-                ],
             ]);
 
             Log::info("Transcription job started successfully", ['jobName' => $jobName]);
-
-            CheckTranscriptionStatus::dispatch($jobName, $this->accountId)
-                ->delay(now()->addSeconds(config('services.aws.transcription.delay')));
-
-            Log::info("CheckTranscriptionStatus job dispatched", ['jobName' => $jobName, 'accountId' => $this->accountId]);
         } catch (\Exception $e) {
             Log::error("Failed to start transcription job: " . $e->getMessage());
         }
