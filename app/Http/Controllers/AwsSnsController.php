@@ -27,10 +27,12 @@ class AwsSnsController extends Controller
             'decoded_message' => $decodedMessage,
             'headers' => $request->headers->all()
         ]);
-        $jobName = '';
-        $accountId = 1;
+        //     $jobName = '';
+        Log::info('Decoded', ['decoded' => $decoded]);
+        Log::info('Decoded Message', ['message' => $decodedMessage]);
+        //        $accountId = 1;
 
-        CheckTranscriptionStatus::dispatch($jobName, $accountId);
+        //      CheckTranscriptionStatus::dispatch($jobName, $accountId);
         Log::info("Receieved SNS Notification", ['raw_body' => $request->getContent(), 'headers' => $request->headers->all()]);
         return response()->json(['message' => 'Received'], Response::HTTP_OK);
     }
