@@ -24,7 +24,28 @@ class VerifyAwsSnsSignature
     {
         Log::info('AWS SNS Raw Payload:', ['body' => $request->getContent()]);
 
-        $message = $request->json()->all();
+        $message = json_decode($request->getContent(), true) ?? [];
+
+        if (isset($message['Type']) && $message['Type'] === 'SubscriptionConfirmation') {
+            Log::info('AWS SNS Subscription Confirmation Received', ['message' => $message]);
+
+            // Ensure SubscribeURL is present
+            if (!isset($message['SubscribeURL']) || !is_string($message['SubscribeURL']) || empty($message['SubscribeURL'])) {
+                Log::error('AWS SNS Subscription Confirmation Failed: Missing SubscribeURL');
+                return response()->json(['error' => 'Missing SubscribeURL'], Response::HTTP_BAD_REQUEST);
+            }
+
+            // Automatically confirm the subscription
+            try {
+                Http::get($message['SubscribeURL']);
+                Log::info('AWS SNS Subscription Confirmed');
+            } catch (\Exception $e) {
+                Log::error('AWS SNS Subscription Confirmation Failed', ['error' => $e->getMessage()]);
+                return response()->json(['error' => 'Failed to confirm subscription'], Response::HTTP_BAD_REQUEST);
+            }
+
+            return response()->json(['message' => 'Subscription confirmed']);
+        }
 
         // Ensure the required fields are present
         if (!isset($message['SignatureVersion'], $message[self::SIGNATURE_KEY], $message[self::SIGNING_CERT_KEY])) {
