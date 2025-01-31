@@ -22,6 +22,7 @@ class VerifyAwsSnsSignature
      */
     public function handle(Request $request, Closure $next): Response
     {
+        Log::info('AWS SNS Raw Payload:', ['body' => $request->getContent()]);
 
         $message = $request->json()->all();
 
