@@ -1,17 +1,35 @@
 <?php
 
+use App\Models\Account;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
 
 use function Pest\Laravel\postJson;
 
+uses(RefreshDatabase::class);
+
 test('it accepts SNS requests with a valid signature', function () {
-    // Mocking the cert Url and the topic_arn
+    // Setup the constants
     $topicArn = 'arn:aws:sns:us-west-2:123456789012:transcription-complete';
     $certUrl = 'https://sns.us-west-2.amazonaws.com/cert.pem';
+    $jobName = 'job-123';
 
+    // Configure SNS topic
     Config::set('services.sns.topic_arn', $topicArn);
+
+    // Create a transcription record so the controller can find it.
+    $account = Account::factory()->create(['email' => 'test@example.com']);
+    $account->transcriptions()->create(['job_name' => $jobName]);
+
+    // Prepare the message payload with the expected structure
+    $messagePayload = [
+        'detail' => [
+            'TranscriptionJobName' => $jobName,
+            'transcription_job_status' => 'COMPLETED'
+        ]
+    ];
 
     Cache::shouldReceive('remember')
         ->withArgs(fn($key, $time, $callback) => str_starts_with($key, 'sns_cert:'))
@@ -46,7 +64,7 @@ EOT,
 
     $stringToSign = implode("\n", [
         "Message",
-        json_encode(["transcription_job_status" => "COMPLETED"], JSON_UNESCAPED_SLASHES), // Match AWS JSON encoding
+        json_encode($messagePayload, JSON_UNESCAPED_SLASHES), // Match AWS JSON encoding
         "MessageId",
         "12345678-1234-5678-1234-567812345678",
         "Timestamp",
@@ -92,19 +110,22 @@ EOT;
     openssl_sign($stringToSign, $validSignature, $privateKey, OPENSSL_ALGO_SHA1);
     $validSignatureBase64 = base64_encode($validSignature);
 
-    $response = postJson('/sns', [
+    $payload = [
         "Type" => "Notification",
         "MessageId" => "12345678-1234-5678-1234-567812345678",
         "TopicArn" => $topicArn,
-        "Message" => json_encode(["transcription_job_status" => "COMPLETED"]),
+        "Message" => json_encode($messagePayload, JSON_UNESCAPED_SLASHES),
         "Timestamp" => now()->toIso8601String(),
         "SignatureVersion" => "1",
         "Signature" => $validSignatureBase64,
         "SigningCertURL" => $certUrl, // Use the provided URL
-    ]);
+    ];
 
-    $response->assertStatus(200)
-        ->assertJson(['message' => 'Received']);
+    $response = postJson('/sns', $payload);
+
+    $response->assertStatus(200);
+    $data = $response->json();
+    expect($data['message'])->toBe('Received');
 });
 
 test('it rejects SNS requests with an invalid signature', function () {

@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class WebhookController extends Controller
 {
-    public function handle(Request $request)
+    public function __invoke(Request $request)
     {
         // Lookup recipient account
         $account = Account::whereEmail($request->input('to'))->first();
