@@ -59,6 +59,7 @@ return [
         'username' => env('CLICKSEND_USERNAME'),
         'api_key' => env('CLICKSEND_API_KEY'),
         'base_url' => env('CLICKSEND_BASE_URL', 'https://rest.clicksend.com/v3'),
+        'subaccount_id' => env('CLICKSEND_ACCOUNT_ID'),
     ],
 
 ];
