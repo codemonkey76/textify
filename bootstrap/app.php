@@ -12,7 +12,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        $middleware->validateCsrfTokens(except: ['/inbound', '/sns']);
+        $middleware->validateCsrfTokens(except: ['/inbound', '/sns', '/delivery']);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
