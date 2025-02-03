@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Enums\MessageStatus;
 use App\Models\SmsMessage;
 use App\Services\ClickSendApi;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -34,10 +35,8 @@ class NotifyDestination implements ShouldQueue
                     'phone_number' => $this->phoneNumber,
                     'message' => $this->message,
                     'message_id' => $messageId,
-                    'status' => 'PENDING'
+                    'status' => MessageStatus::Pending
                 ]);
-
-                CheckSmsStatus::dispatch($messageId)->delay(now()->addSeconds(30));
             } else {
                 Log::warning("Message ID not found in the response for {$this->phoneNumber}.");
             }

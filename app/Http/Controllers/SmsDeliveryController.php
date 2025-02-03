@@ -37,6 +37,7 @@ class SmsDeliveryController extends Controller
         }
 
         $messageData = $response['data'];
+        Log::channel('clicksend')->info("Delivery Report:", ['data' => $messageData]);
         $statusCode = (int) ($messageData['status_code'] ?? 0);
 
         $status = match ($statusCode) {
