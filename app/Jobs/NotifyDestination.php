@@ -28,6 +28,8 @@ class NotifyDestination implements ShouldQueue
         if ($response['http_code'] === 200) {
             Log::info("sendSms response:", ['response' => $response]);
             $messageId = $response['body']['data']['messages'][0]['message_id'] ?? null;
+            $messageParts = $response['body']['data']['messages'][0]['message_parts'] ?? 1;
+            $messagePrice = (float) $response['body']['data']['messages'][0]['message_price'] ?? 0.1;
 
             if ($messageId) {
                 SmsMessage::create([
@@ -35,7 +37,9 @@ class NotifyDestination implements ShouldQueue
                     'phone_number' => $this->phoneNumber,
                     'message' => $this->message,
                     'message_id' => $messageId,
-                    'status' => MessageStatus::Pending
+                    'status' => MessageStatus::Pending,
+                    'message_parts' => $messageParts,
+                    'message_price' => $messagePrice,
                 ]);
             } else {
                 Log::warning("Message ID not found in the response for {$this->phoneNumber}.");
