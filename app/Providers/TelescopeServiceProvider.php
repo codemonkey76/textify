@@ -18,9 +18,7 @@ class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
 
         $this->hideSensitiveRequestDetails();
 
-        $isLocal = $this->app->environment('local');
-
-        Telescope::filter(function (IncomingEntry $entry) use ($isLocal) {
+        Telescope::filter(function (IncomingEntry $entry) {
 
             $uri = data_get($entry, 'content.uri');
             $status = data_get($entry, 'content.response_status');
@@ -29,6 +27,8 @@ class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
             if ($entry->type === 'request' && $uri === '/delivery' && $status === 403) {
                 return false;
             }
+
+            return true;
 
             return
                 $entry->isReportableException() ||
