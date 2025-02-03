@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Telescope\IncomingEntry;
 use Laravel\Telescope\Telescope;
@@ -18,7 +19,13 @@ class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
 
         $this->hideSensitiveRequestDetails();
 
-        Telescope::filter(function (IncomingEntry $entry) {
+        $isLocal = $this->app->environment('local');
+
+        Telescope::auth(function () {
+            return Auth::check() && Auth::user()->email === 'shane@alphasg.com.au';
+        });
+
+        Telescope::filter(function (IncomingEntry $entry) use ($isLocal) {
 
             $uri = data_get($entry, 'content.uri');
             $status = data_get($entry, 'content.response_status');
@@ -28,9 +35,8 @@ class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
                 return false;
             }
 
-            return true;
 
-            return
+            return $isLocal ||
                 $entry->isReportableException() ||
                 $entry->isFailedRequest() ||
                 $entry->isFailedJob() ||
