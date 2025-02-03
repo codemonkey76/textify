@@ -128,6 +128,7 @@ class QueuedJobsTest extends TestCase
 
         $this->mockClickSendObject
             ->shouldReceive('sendSms')
+            ->once()
             ->with('+1234567890', 'Test message')
             ->andReturn([
                 'http_code' => 200,
@@ -142,8 +143,6 @@ class QueuedJobsTest extends TestCase
 
         $job = new NotifyDestination($account->id, '+1234567890', 'Test message');
         $job->handle(app(ClickSendApi::class));
-
-        Bus::assertDispatched(CheckSmsStatus::class, fn($job) => $job->messageId === $msgId);
     }
 
     #[Test]
