@@ -28,17 +28,19 @@ class SmsDeliveryController extends Controller
             return response()->json(['error', "Message with message_id: $message_id not found"], Response::HTTP_NOT_FOUND);
         }
 
-        $response = $this->clickSendApi->checkSmsStatus($message_id);
+        /*$response = $this->clickSendApi->checkSmsStatus($message_id);*/
+        /**/
+        /**/
+        /*if ($response['http_code'] !== 200 || empty($response['data'])) {*/
+        /*    Log::warning("Failed to fetch SMS status for {$message_id}", ['response' => $response]);*/
+        /*    return response()->json(['error' => "Failed to fetch SMS status for $message_id"], Response::HTTP_INTERNAL_SERVER_ERROR);*/
+        /*}*/
+        /**/
+        /*$messageData = $response['data'];*/
+        /*Log::channel('clicksend')->info("Delivery Report:", ['data' => $messageData]);*/
+        /*$statusCode = (int) ($messageData['status_code'] ?? 0);*/
 
-
-        if ($response['http_code'] !== 200 || empty($response['data'])) {
-            Log::warning("Failed to fetch SMS status for {$message_id}", ['response' => $response]);
-            return response()->json(['error' => "Failed to fetch SMS status for $message_id"], Response::HTTP_INTERNAL_SERVER_ERROR);
-        }
-
-        $messageData = $response['data'];
-        Log::channel('clicksend')->info("Delivery Report:", ['data' => $messageData]);
-        $statusCode = (int) ($messageData['status_code'] ?? 0);
+        $statusCode = $request->input('status_code') ?? 0;
 
         $status = match ($statusCode) {
             200 => MessageStatus::Pending,
