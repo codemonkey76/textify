@@ -39,8 +39,8 @@ class SmsDeliveryController extends Controller
 
         $message->update([
             'status' => $status,
-            'error_code' => $messageData['error_code'] ?? null,
-            'error_message' => $messageData['error_text'] ?? null
+            'error_code' => $request->input('error_code') ?? null,
+            'error_message' => $request->input('error_text') ?? null
         ]);
     }
 }
