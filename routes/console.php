@@ -1,5 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Schedule;
 
-Artisan::command('telescope:prune')->daily();
+Schedule::command('telescope:prune')->daily();
