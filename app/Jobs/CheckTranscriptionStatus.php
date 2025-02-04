@@ -2,11 +2,13 @@
 
 namespace App\Jobs;
 
+use App\Models\Transcription;
 use Aws\TranscribeService\TranscribeServiceClient;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 
 class CheckTranscriptionStatus implements ShouldQueue
 {
@@ -34,6 +36,14 @@ class CheckTranscriptionStatus implements ShouldQueue
                 Log::info("Transcription completed successfully for job {$this->jobName}.", [
                     'transcription' => $transcriptionObject,
                 ]);
+
+                $transcription = Transcription::whereJobName($this->jobName)->first();
+
+                if ($transcription) {
+                    $transcription->update(['status' => 'COMPLETED']);
+                    Storage::delete($transcription->file_path);
+                }
+
                 NotifyAccount::dispatch($this->accountId, $transcription);
             } elseif ($status === "FAILED") {
                 Log::error("Transcription job {$this->jobName} failed.", [

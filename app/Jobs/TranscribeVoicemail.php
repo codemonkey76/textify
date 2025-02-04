@@ -39,7 +39,8 @@ class TranscribeVoicemail implements ShouldQueue
 
             Transcription::create([
                 'account_id' => $this->accountId,
-                'job_name' => $jobName
+                'job_name' => $jobName,
+                'file_path' => $this->filePath,
             ]);
 
             Log::info("Transcription job started successfully", ['jobName' => $jobName]);
