@@ -31,12 +31,14 @@ class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
             }
 
 
-            return $isLocal ||
-                $entry->isReportableException() ||
-                $entry->isFailedRequest() ||
-                $entry->isFailedJob() ||
-                $entry->isScheduledTask() ||
-                $entry->hasMonitoredTag();
+            return true;
+
+            /*return $isLocal ||*/
+            /*    $entry->isReportableException() ||*/
+            /*    $entry->isFailedRequest() ||*/
+            /*    $entry->isFailedJob() ||*/
+            /*    $entry->isScheduledTask() ||*/
+            /*    $entry->hasMonitoredTag();*/
         });
     }
 
