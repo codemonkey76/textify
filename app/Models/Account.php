@@ -20,4 +20,9 @@ class Account extends Model
     {
         return $this->hasMany(Transcription::class);
     }
+
+    public function getDestinationPhoneNumbersAttribute(): string
+    {
+        return $this->destinations->pluck('phone_number')->implode(', ');
+    }
 }
