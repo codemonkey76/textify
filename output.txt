@@ -1,0 +1,615 @@
+$ vue-tsc && vite build
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/ApplicationLogo.tsx(1,31): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/ApplicationLogo.tsx(5,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/ApplicationLogo.tsx(5,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/ApplicationLogo.tsx(10,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/ApplicationLogo.tsx(11,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Checkbox.tsx(1,37): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Checkbox.tsx(8,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Checkbox.tsx(8,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/DangerButton.tsx(1,38): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/DangerButton.tsx(10,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/DangerButton.tsx(10,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/DangerButton.tsx(20,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(1,28): error TS2307: Cannot find module '@headlessui/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(2,40): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(10,8): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(26,18): error TS7006: Parameter 'previousState' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(30,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(31,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(31,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(41,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(41,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(44,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(47,18): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(90,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(94,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(101,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Dropdown.tsx(102,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/InputError.tsx(1,32): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/InputError.tsx(9,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/InputError.tsx(9,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/InputError.tsx(14,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/InputLabel.tsx(1,37): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/InputLabel.tsx(10,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/InputLabel.tsx(10,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/InputLabel.tsx(18,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Modal.tsx(6,8): error TS2307: Cannot find module '@headlessui/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Modal.tsx(7,35): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Modal.tsx(27,27): error TS7053: Element implicitly has an 'any' type because expression of type 'PropsWithChildren<{ show: boolean; maxWidth?: "sm" | "md" | "lg" | "xl" | "2xl" | undefined; closeable?: boolean | undefined; onClose: CallableFunction; }>' can't be used to index type '{ sm: string; md: string; lg: string; xl: string; '2xl': string; }'.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Modal.tsx(36,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/Modal.tsx(51,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/NavLink.tsx(1,40): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/NavLink.tsx(10,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/PrimaryButton.tsx(1,38): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/PrimaryButton.tsx(10,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/PrimaryButton.tsx(10,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/PrimaryButton.tsx(20,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/ResponsiveNavLink.tsx(1,40): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/ResponsiveNavLink.tsx(10,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/SecondaryButton.tsx(1,38): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/SecondaryButton.tsx(11,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/SecondaryButton.tsx(11,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/SecondaryButton.tsx(22,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/TextInput.tsx(7,8): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/TextInput.tsx(16,5): error TS7006: Parameter 'ref' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/TextInput.tsx(31,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Components/TextInput.tsx(31,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(1,29): error TS2307: Cannot find module '@/Components/ApplicationLogo' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(2,22): error TS2307: Cannot find module '@/Components/Dropdown' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(3,21): error TS2307: Cannot find module '@/Components/NavLink' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(4,31): error TS2307: Cannot find module '@/Components/ResponsiveNavLink' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(5,31): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(6,56): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(18,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(18,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(19,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(20,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(21,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(22,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(23,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(27,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(29,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(36,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(37,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(39,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(40,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(43,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(44,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(50,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(56,53): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(61,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(62,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(63,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(81,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(82,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(84,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(85,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(88,42): error TS7006: Parameter 'previousState' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(93,33): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(99,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(110,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(121,33): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(122,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(123,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(124,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(125,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(127,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(133,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(140,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(142,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(143,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(144,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(146,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(147,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(149,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(150,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(152,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(163,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(164,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(165,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(166,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(169,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(170,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(172,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(173,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(176,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(176,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/AuthenticatedLayout.tsx(177,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/GuestLayout.tsx(1,29): error TS2307: Cannot find module '@/Components/ApplicationLogo' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/GuestLayout.tsx(2,22): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/GuestLayout.tsx(3,35): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/GuestLayout.tsx(7,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/GuestLayout.tsx(7,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/GuestLayout.tsx(8,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/GuestLayout.tsx(12,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/GuestLayout.tsx(14,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/GuestLayout.tsx(16,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Layouts/GuestLayout.tsx(17,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(1,24): error TS2307: Cannot find module '@/Components/InputError' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(2,24): error TS2307: Cannot find module '@/Components/InputLabel' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(3,27): error TS2307: Cannot find module '@/Components/PrimaryButton' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(4,23): error TS2307: Cannot find module '@/Components/TextInput' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(5,25): error TS2307: Cannot find module '@/Layouts/GuestLayout' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(6,31): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(7,34): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(14,39): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(23,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(26,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(29,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(31,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(32,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(42,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(46,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(48,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(52,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ConfirmPassword.tsx(53,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(1,24): error TS2307: Cannot find module '@/Components/InputError' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(2,27): error TS2307: Cannot find module '@/Components/PrimaryButton' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(3,23): error TS2307: Cannot find module '@/Components/TextInput' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(4,25): error TS2307: Cannot find module '@/Layouts/GuestLayout' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(5,31): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(6,34): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(13,39): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(20,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(23,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(27,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(30,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(32,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(35,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(43,32): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(48,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(52,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ForgotPassword.tsx(53,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(1,22): error TS2307: Cannot find module '@/Components/Checkbox' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(2,24): error TS2307: Cannot find module '@/Components/InputError' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(3,24): error TS2307: Cannot find module '@/Components/InputLabel' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(4,27): error TS2307: Cannot find module '@/Components/PrimaryButton' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(5,23): error TS2307: Cannot find module '@/Components/TextInput' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(6,25): error TS2307: Cannot find module '@/Layouts/GuestLayout' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(7,37): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(8,34): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(23,39): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(32,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(36,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(38,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(41,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(42,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(53,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(57,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(59,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(69,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(73,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(75,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(76,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(80,40): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(87,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(89,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(90,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(91,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(93,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(106,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Login.tsx(107,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(1,24): error TS2307: Cannot find module '@/Components/InputError' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(2,24): error TS2307: Cannot find module '@/Components/InputLabel' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(3,27): error TS2307: Cannot find module '@/Components/PrimaryButton' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(4,23): error TS2307: Cannot find module '@/Components/TextInput' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(5,25): error TS2307: Cannot find module '@/Layouts/GuestLayout' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(6,37): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(7,34): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(17,39): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(26,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(29,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(30,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(40,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(45,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(47,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(57,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(62,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(64,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(74,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(79,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(81,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(94,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(104,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(106,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(117,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/Register.tsx(118,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(1,24): error TS2307: Cannot find module '@/Components/InputError' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(2,24): error TS2307: Cannot find module '@/Components/InputLabel' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(3,27): error TS2307: Cannot find module '@/Components/PrimaryButton' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(4,23): error TS2307: Cannot find module '@/Components/TextInput' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(5,25): error TS2307: Cannot find module '@/Layouts/GuestLayout' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(6,31): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(7,34): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(23,39): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(32,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(35,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(36,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(46,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(50,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(52,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(63,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(67,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(69,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(81,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(90,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(92,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(96,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/ResetPassword.tsx(97,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(1,27): error TS2307: Cannot find module '@/Components/PrimaryButton' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(2,25): error TS2307: Cannot find module '@/Layouts/GuestLayout' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(3,37): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(4,34): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(9,39): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(16,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(19,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(24,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(27,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(30,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(33,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(34,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(47,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Auth/VerifyEmail.tsx(48,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Dashboard.tsx(1,33): error TS2307: Cannot find module '@/Layouts/AuthenticatedLayout' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Dashboard.tsx(2,22): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Dashboard.tsx(6,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Dashboard.tsx(8,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Dashboard.tsx(10,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Dashboard.tsx(15,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Dashboard.tsx(16,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Dashboard.tsx(17,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Dashboard.tsx(18,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Dashboard.tsx(20,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Dashboard.tsx(21,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Dashboard.tsx(22,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Dashboard.tsx(23,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(1,33): error TS2307: Cannot find module '@/Layouts/AuthenticatedLayout' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(2,27): error TS2307: Cannot find module '@/types' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(3,22): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(13,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(15,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(17,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(22,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(23,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(24,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(30,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(32,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(34,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(36,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(38,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(39,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Edit.tsx(40,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(1,26): error TS2307: Cannot find module '@/Components/DangerButton' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(2,24): error TS2307: Cannot find module '@/Components/InputError' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(3,24): error TS2307: Cannot find module '@/Components/InputLabel' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(4,19): error TS2307: Cannot find module '@/Components/Modal' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(5,29): error TS2307: Cannot find module '@/Components/SecondaryButton' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(6,23): error TS2307: Cannot find module '@/Components/TextInput' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(7,25): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(8,52): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(34,43): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(53,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(53,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(54,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(55,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(57,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(59,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(64,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(65,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(72,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(73,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(75,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(77,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(82,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(84,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(97,40): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(109,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(111,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(119,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(120,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.tsx(122,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(1,24): error TS2307: Cannot find module '@/Components/InputError' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(2,24): error TS2307: Cannot find module '@/Components/InputLabel' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(3,27): error TS2307: Cannot find module '@/Components/PrimaryButton' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(4,23): error TS2307: Cannot find module '@/Components/TextInput' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(5,28): error TS2307: Cannot find module '@headlessui/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(6,25): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(7,42): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(31,47): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(37,23): error TS7006: Parameter 'errors' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(52,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(52,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(53,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(54,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(56,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(58,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(61,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(62,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(64,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(65,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(75,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(87,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(89,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(96,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(103,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(105,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(114,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(126,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(128,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(138,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(140,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(142,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(143,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx(144,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(1,24): error TS2307: Cannot find module '@/Components/InputError' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(2,24): error TS2307: Cannot find module '@/Components/InputLabel' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(3,27): error TS2307: Cannot find module '@/Components/PrimaryButton' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(4,23): error TS2307: Cannot find module '@/Components/TextInput' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(5,28): error TS2307: Cannot find module '@headlessui/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(6,40): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(7,34): error TS2307: Cannot find module 'react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(26,39): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(33,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(33,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(34,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(35,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(37,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(39,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(41,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(42,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(44,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(45,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(52,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(59,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(61,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(69,36): error TS7006: Parameter 'e' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(75,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(78,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(79,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(89,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(92,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(95,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(97,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(100,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(110,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(112,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(114,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(115,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx(116,9): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(1,27): error TS2307: Cannot find module '@/types' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(2,28): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(21,9): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(23,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(24,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(29,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(30,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(31,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(32,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(33,33): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(39,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(43,33): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(44,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(45,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(69,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(70,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(72,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(73,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(74,33): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(79,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(83,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(89,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(94,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(94,200): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(95,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(97,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(98,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(102,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(103,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(109,53): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(113,53): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(117,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(118,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(120,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(121,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(123,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(125,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(134,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(135,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(136,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(138,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(145,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(150,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(151,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(152,33): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(154,33): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(158,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(159,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(165,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(166,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(167,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(168,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(169,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(171,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(172,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(174,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(176,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(183,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(184,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(186,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(193,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(198,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(199,33): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(201,33): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(205,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(206,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(212,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(213,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(214,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(215,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(216,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(217,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(218,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(220,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(221,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(223,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(225,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(232,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(233,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(235,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(242,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(247,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(248,33): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(250,33): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(251,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(252,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(258,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(259,49): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(260,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(261,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(262,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(264,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(265,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(267,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(269,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(273,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(278,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(280,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(285,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(287,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(292,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(294,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(299,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(301,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(306,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(310,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(315,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(317,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(322,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(324,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(329,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(331,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(336,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(338,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(343,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(345,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(350,45): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(352,41): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(353,37): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(354,33): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(355,29): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(356,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(358,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(360,25): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(361,21): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(362,17): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/Pages/Welcome.tsx(363,13): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/app.tsx(4,34): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/app.tsx(6,28): error TS2307: Cannot find module 'react-dom/client' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/app.tsx(11,13): error TS7006: Parameter 'title' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/app.tsx(12,15): error TS7006: Parameter 'name' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/app.tsx(17,13): error TS7031: Binding element 'el' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/app.tsx(17,17): error TS7031: Binding element 'App' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/app.tsx(17,22): error TS7031: Binding element 'props' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/app.tsx(20,21): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/ssr.tsx(1,34): error TS2307: Cannot find module '@inertiajs/react' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/ssr.tsx(2,26): error TS2307: Cannot find module '@inertiajs/react/server' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/ssr.tsx(4,28): error TS2307: Cannot find module 'react-dom/server' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/ssr.tsx(5,27): error TS2307: Cannot find module 'ziggy-js' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/ssr.tsx(6,23): error TS2307: Cannot find module '../../vendor/tightenco/ziggy' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/ssr.tsx(10,15): error TS7006: Parameter 'page' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/ssr.tsx(14,17): error TS7006: Parameter 'title' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/ssr.tsx(15,19): error TS7006: Parameter 'name' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/ssr.tsx(20,19): error TS7031: Binding element 'App' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/ssr.tsx(20,24): error TS7031: Binding element 'props' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-react-ts/resources/js/ssr.tsx(30,20): error TS2875: This JSX tag requires the module path 'react/jsx-runtime' to exist, but none could be found. Make sure you have types for the appropriate package installed.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Components/DropdownLink.vue(2,22): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Components/NavLink.vue(3,22): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Components/ResponsiveNavLink.vue(3,22): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Layouts/AuthenticatedLayout.vue(3,29): error TS2307: Cannot find module '@/Components/ApplicationLogo.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Layouts/AuthenticatedLayout.vue(4,22): error TS2307: Cannot find module '@/Components/Dropdown.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Layouts/AuthenticatedLayout.vue(5,26): error TS2307: Cannot find module '@/Components/DropdownLink.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Layouts/AuthenticatedLayout.vue(6,21): error TS2307: Cannot find module '@/Components/NavLink.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Layouts/AuthenticatedLayout.vue(7,31): error TS2307: Cannot find module '@/Components/ResponsiveNavLink.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Layouts/AuthenticatedLayout.vue(8,22): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Layouts/AuthenticatedLayout.vue(55,52): error TS2339: Property '$page' does not exist on type 'CreateComponentPublicInstanceWithMixins<ToResolvedProps<{}, {}>, { ApplicationLogo: any; Dropdown: any; DropdownLink: any; NavLink: any; ResponsiveNavLink: any; Link: any; showingNavigationDropdown: Ref<boolean, boolean>; }, ... 23 more ..., {}>'.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Layouts/AuthenticatedLayout.vue(159,36): error TS2339: Property '$page' does not exist on type 'CreateComponentPublicInstanceWithMixins<ToResolvedProps<{}, {}>, { ApplicationLogo: any; Dropdown: any; DropdownLink: any; NavLink: any; ResponsiveNavLink: any; Link: any; showingNavigationDropdown: Ref<boolean, boolean>; }, ... 23 more ..., {}>'.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Layouts/AuthenticatedLayout.vue(162,36): error TS2339: Property '$page' does not exist on type 'CreateComponentPublicInstanceWithMixins<ToResolvedProps<{}, {}>, { ApplicationLogo: any; Dropdown: any; DropdownLink: any; NavLink: any; ResponsiveNavLink: any; Link: any; showingNavigationDropdown: Ref<boolean, boolean>; }, ... 23 more ..., {}>'.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Layouts/GuestLayout.vue(2,29): error TS2307: Cannot find module '@/Components/ApplicationLogo.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Layouts/GuestLayout.vue(3,22): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ConfirmPassword.vue(2,25): error TS2307: Cannot find module '@/Layouts/GuestLayout.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ConfirmPassword.vue(3,24): error TS2307: Cannot find module '@/Components/InputError.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ConfirmPassword.vue(4,24): error TS2307: Cannot find module '@/Components/InputLabel.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ConfirmPassword.vue(5,27): error TS2307: Cannot find module '@/Components/PrimaryButton.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ConfirmPassword.vue(6,23): error TS2307: Cannot find module '@/Components/TextInput.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ConfirmPassword.vue(7,31): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ForgotPassword.vue(2,25): error TS2307: Cannot find module '@/Layouts/GuestLayout.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ForgotPassword.vue(3,24): error TS2307: Cannot find module '@/Components/InputError.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ForgotPassword.vue(4,24): error TS2307: Cannot find module '@/Components/InputLabel.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ForgotPassword.vue(5,27): error TS2307: Cannot find module '@/Components/PrimaryButton.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ForgotPassword.vue(6,23): error TS2307: Cannot find module '@/Components/TextInput.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ForgotPassword.vue(7,31): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/Login.vue(2,22): error TS2307: Cannot find module '@/Components/Checkbox.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/Login.vue(3,25): error TS2307: Cannot find module '@/Layouts/GuestLayout.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/Login.vue(4,24): error TS2307: Cannot find module '@/Components/InputError.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/Login.vue(5,24): error TS2307: Cannot find module '@/Components/InputLabel.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/Login.vue(6,27): error TS2307: Cannot find module '@/Components/PrimaryButton.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/Login.vue(7,23): error TS2307: Cannot find module '@/Components/TextInput.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/Login.vue(8,37): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/Register.vue(2,25): error TS2307: Cannot find module '@/Layouts/GuestLayout.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/Register.vue(3,24): error TS2307: Cannot find module '@/Components/InputError.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/Register.vue(4,24): error TS2307: Cannot find module '@/Components/InputLabel.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/Register.vue(5,27): error TS2307: Cannot find module '@/Components/PrimaryButton.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/Register.vue(6,23): error TS2307: Cannot find module '@/Components/TextInput.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/Register.vue(7,37): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ResetPassword.vue(2,25): error TS2307: Cannot find module '@/Layouts/GuestLayout.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ResetPassword.vue(3,24): error TS2307: Cannot find module '@/Components/InputError.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ResetPassword.vue(4,24): error TS2307: Cannot find module '@/Components/InputLabel.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ResetPassword.vue(5,27): error TS2307: Cannot find module '@/Components/PrimaryButton.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ResetPassword.vue(6,23): error TS2307: Cannot find module '@/Components/TextInput.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/ResetPassword.vue(7,31): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/VerifyEmail.vue(3,25): error TS2307: Cannot find module '@/Layouts/GuestLayout.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/VerifyEmail.vue(4,27): error TS2307: Cannot find module '@/Components/PrimaryButton.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Auth/VerifyEmail.vue(5,37): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Dashboard.vue(2,33): error TS2307: Cannot find module '@/Layouts/AuthenticatedLayout.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Dashboard.vue(3,22): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Edit.vue(2,33): error TS2307: Cannot find module '@/Layouts/AuthenticatedLayout.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Edit.vue(6,22): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.vue(2,26): error TS2307: Cannot find module '@/Components/DangerButton.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.vue(3,24): error TS2307: Cannot find module '@/Components/InputError.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.vue(4,24): error TS2307: Cannot find module '@/Components/InputLabel.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.vue(5,19): error TS2307: Cannot find module '@/Components/Modal.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.vue(6,29): error TS2307: Cannot find module '@/Components/SecondaryButton.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.vue(7,23): error TS2307: Cannot find module '@/Components/TextInput.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/DeleteUserForm.vue(8,25): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue(2,24): error TS2307: Cannot find module '@/Components/InputError.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue(3,24): error TS2307: Cannot find module '@/Components/InputLabel.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue(4,27): error TS2307: Cannot find module '@/Components/PrimaryButton.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue(5,23): error TS2307: Cannot find module '@/Components/TextInput.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue(6,25): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue(2,24): error TS2307: Cannot find module '@/Components/InputError.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue(3,24): error TS2307: Cannot find module '@/Components/InputLabel.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue(4,27): error TS2307: Cannot find module '@/Components/PrimaryButton.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue(5,23): error TS2307: Cannot find module '@/Components/TextInput.vue' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue(6,40): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Welcome.vue(2,28): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/Pages/Welcome.vue(49,35): error TS2339: Property '$page' does not exist on type 'CreateComponentPublicInstanceWithMixins<ToResolvedProps<__VLS_Props, {}>, { Head: any; Link: any; handleImageError: () => void; }, {}, {}, {}, ComponentOptionsMixin, ... 19 more ..., {}>'.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/app.ts(4,34): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/app.ts(6,21): error TS1484: 'DefineComponent' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/app.ts(7,26): error TS2307: Cannot find module '../../vendor/tightenco/ziggy' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/app.ts(12,13): error TS7006: Parameter 'title' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/app.ts(13,15): error TS7006: Parameter 'name' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/app.ts(18,13): error TS7031: Binding element 'el' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/app.ts(18,17): error TS7031: Binding element 'App' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/app.ts(18,22): error TS7031: Binding element 'props' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/app.ts(18,29): error TS7031: Binding element 'plugin' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/ssr.ts(1,34): error TS2307: Cannot find module '@inertiajs/vue3' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/ssr.ts(2,26): error TS2307: Cannot find module '@inertiajs/vue3/server' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/ssr.ts(5,24): error TS1484: 'DefineComponent' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/ssr.ts(6,26): error TS2307: Cannot find module '../../vendor/tightenco/ziggy' or its corresponding type declarations.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/ssr.ts(10,15): error TS7006: Parameter 'page' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/ssr.ts(14,17): error TS7006: Parameter 'title' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/ssr.ts(15,19): error TS7006: Parameter 'name' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/ssr.ts(20,17): error TS7031: Binding element 'App' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/ssr.ts(20,22): error TS7031: Binding element 'props' implicitly has an 'any' type.
+vendor/laravel/breeze/stubs/inertia-vue-ts/resources/js/ssr.ts(20,29): error TS7031: Binding element 'plugin' implicitly has an 'any' type.
