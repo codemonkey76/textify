@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return ['Laravel' => app()->version()];
-});
+    return view('dashboard');
+})->middleware('auth')->name('dashboard');
 
 Route::get('/login', function () {
     return view('auth.login');
