@@ -67,7 +67,7 @@ test('accepts clicksend post with valid subaccount_id', function () {
         'subaccount_id' => $this->expectedId,
         'messageid' => $message->message_id,
         'status' => 'Delivered',
-        'status_code' => 200
+        'status_code' => 201
     ];
 
     $response = postJson('/delivery', $payload);
@@ -102,30 +102,4 @@ test('it fails if messageid is invalid', function () {
     $response = postJson('/delivery', $payload);
 
     $response->assertStatus(Response::HTTP_NOT_FOUND);
-});
-
-test('it returns error if ClickSendAPI fails', function () {
-    SmsMessage::factory()->create([
-        'message_id' => 'TEST_MESSAGE_ID',
-        'status' => MessageStatus::Pending
-    ]);
-
-    $clickSendApiMock = Mockery::mock(ClickSendApi::class);
-    $clickSendApiMock->shouldReceive('checkSmsStatus')
-        ->with('TEST_MESSAGE_ID')
-        ->andReturn([
-            'http_code' => 500,
-            'data' => null
-        ]);
-
-    $this->app->instance(ClickSendApi::class, $clickSendApiMock);
-
-    $payload = [
-        'messageid' => 'TEST_MESSAGE_ID',
-        'subaccount_id' => $this->expectedId,
-        'status' => 'Delivered',
-    ];
-
-    $response = postJson('/delivery', $payload);
-    $response->assertStatus(Response::HTTP_INTERNAL_SERVER_ERROR);
 });

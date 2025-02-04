@@ -135,7 +135,12 @@ class QueuedJobsTest extends TestCase
                 'body' => [
                     'data' => [
                         'messages' => [
-                            ['message_id' => 'msg123']
+                            [
+                                'message_id' => $msgId,
+                                'message_parts' => 1,
+                                'message_price' => 0.07
+                            ]
+
                         ]
                     ]
                 ]
@@ -148,13 +153,15 @@ class QueuedJobsTest extends TestCase
     #[Test]
     public function it_marks_sms_as_failed_when_not_delivered()
     {
+
+        $msgId = 'msg123';
         $account = Account::create(['email' => 'test@example.com']);
         $errMsg = 'Rejected by the recipient network.';
 
         $smsMessage = SmsMessage::create([
             'message' => 'Test message',
             'phone_number' => '+1234567890',
-            'message_id' => 'msg123',
+            'message_id' => $msgId,
             'status' => 'PENDING',
             'message_price' => 0.01,
             'message_parts' => 1,
